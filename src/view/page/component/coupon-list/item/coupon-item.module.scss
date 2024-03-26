@@ -1,0 +1,102 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 2px);
+	background: rgba(245, 88, 88, 0.04);
+	border: 1px solid rgba(245, 88, 88, 0.2);
+	border-radius: 8px;
+	overflow: hidden;
+
+	> .left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 175px;
+		height: 175px;
+		background: rgba(245, 88, 88, 0.08);
+
+		> .amount {
+			color: #f55858;
+			font-size: 48px;
+			font-weight: bold;
+			font-family: PingFang SC-Semibold, PingFang SC;
+		}
+
+		> .tip {
+			position: absolute;
+			padding: 4px 8px;
+			top: 0;
+			left: 0;
+			color: #ffffff;
+			font-size: 20px;
+			font-family: PingFang SC-Medium, PingFang SC;
+			background: rgb(245, 88, 88);
+			border-bottom-right-radius: 8px;
+		}
+	}
+
+	> .content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 8px;
+		padding: 24px;
+
+		> .title {
+			color: #1a1a1a;
+			font-size: 30px;
+		}
+
+		> .date {
+			color: #9da3b2;
+			font-size: 24px;
+		}
+
+		> .each {
+			color: #a3592b;
+			font-size: 22px;
+		}
+
+		> .description {
+			color: #9da3b2;
+			font-size: 24px;
+		}
+	}
+
+	> .selector {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 24px;
+		width: 32px;
+
+		> .image {
+			width: 32px;
+			height: 32px;
+		}
+
+		> .circle {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 2px solid #dcdfe5;
+			background: #ffffff;
+		}
+	}
+
+	> .expired {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 24px;
+
+		> .image {
+			width: 88px;
+			height: 88px;
+		}
+	}
+}

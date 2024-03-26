@@ -1,0 +1,95 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	background: #F0F0F0;
+
+	> .top {
+		flex: 1;
+		overflow: hidden;
+	}
+
+	> .bottom {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0 32px;
+		width: calc(100% - 64px);
+		height: 120px;
+		background: #FFFFFF;
+		border-top: 1px solid #EAECF0;
+
+		> .count {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+
+			> .text {
+				color: #6B7080;
+				font-size: 24px;
+			}
+
+			> .value {
+				color: #FF6600;
+				font-size: 48px;
+				font-family: DIN Pro-Medium, DIN Pro;
+				font-weight: bold;
+			}
+
+			> .yuan {
+				margin-left: 8px;
+				color: #FF6600;
+				font-size: 24px;
+			}
+		}
+
+		> .button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 256px;
+			height: 88px;
+			background: #FF6600;
+			border-radius: 44px;
+			font-size: 30px;
+		}
+	}
+}
+
+.scrollContent {
+
+	> .empty {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		> .image {
+			margin-top: 175px;
+			margin-bottom: 8px;
+			width: 400px;
+			height: 400px;
+		}
+
+		> .text {
+			color: #9DA3B2;
+			font-size: 30px;
+		}
+	}
+
+	> .list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 32px;
+		width: calc(100% - 64px);
+
+		> .text {
+			padding: 16px;
+			color: #9DA3B2;
+			font-size: 30px;
+		}
+	}
+}

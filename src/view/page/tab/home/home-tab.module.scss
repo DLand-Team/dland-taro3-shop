@@ -1,0 +1,133 @@
+.background {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 32px;
+
+	> .search {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+		width: 100%;
+		height: 80px;
+		background: #FFFFFF;
+		border-radius: 24px;
+		transition: 0.35s;
+
+		> .icon {
+			margin-left: 24px;
+		}
+
+		> .text {
+			flex: 1;
+			margin-right: 24px;
+			font-size: 28px;
+			color: #797E8E;
+		}
+	}
+
+	> .banner {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 30%;
+		border-radius: 24px;
+		overflow: hidden;
+
+		> .swiper {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+
+			.swiperImage {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	> .tip {
+		width: 100%;
+		height: 64px;
+		background: #FDF5E4;
+		border-radius: 16px;
+
+		> .swiper {
+			width: 100%;
+			height: 100%;
+
+			.text {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 0 24px;
+				width: 100%;
+				height: 100%;
+				color: #7B351E;
+				font-size: 24px;
+			}
+		}
+	}
+
+	> .category {
+
+		> .swiper {
+			height: 325px;
+
+			.eachParam {
+				display: grid;
+				grid-template-columns: repeat(4, calc(25% - (24px * 3 / 4)));
+				grid-gap: 24px;
+				padding: 6px;
+
+				.each {
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+
+					> .image {
+						width: 100%;
+						height: 94px;
+					}
+
+					> .title {
+						color: #1A1A1A;
+						font-size: 26px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	> .recommend {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 16px;
+		background: #FAF3E6;
+		border-radius: 24px;
+
+		> .title {
+			padding: 4px 16px;
+			color: #7B351E;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		> .list {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+}

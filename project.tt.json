@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "jiazheng",
+  "appid": "wx0f6827588152bf05",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}

@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	padding: 16px;
+
+	> .part {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		> .title {
+			display: flex;
+			flex-direction: row;
+
+			> .text {
+				flex: 1;
+				color: #1A1A1A;
+				font-size: 32px;
+				font-weight: bold;
+			}
+
+			> .value {
+				color: #FF6600;
+				font-size: 32px;
+				font-weight: bold;
+				text-align: right;
+			}
+		}
+
+		> .item {
+			display: flex;
+			flex-direction: row;
+
+			> .text {
+				flex: 1;
+				color: #9DA3B2;
+				font-size: 28px;
+			}
+
+			> .value {
+				color: #FF6600;
+				font-size: 28px;
+				text-align: right;
+			}
+		}
+	}
+}

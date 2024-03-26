@@ -1,0 +1,140 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: #F5F6FA;
+
+	> .housekeeper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+		padding: 48px 32px;
+
+		> .image {
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+		}
+
+		> .detail {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			> .name {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 16px;
+
+				> .text {
+					color: #1A1A1A;
+					font-size: 30px;
+					font-weight: bold;
+				}
+
+				> .ext {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 0 12px;
+					height: 32px;
+					color: #F06018;
+					font-size: 20px;
+					border: 1px solid #F06018;
+					border-radius: 16px;
+				}
+			}
+
+			> .info {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 32px;
+
+				> .text {
+					color: #6B7080;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	> .commentList {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 0 32px env(safe-area-inset-bottom) 32px;
+		background: #FFFFFF;
+
+		> .comment {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			padding: 36px 0;
+			border-bottom: 1px solid #EFF1F5;
+
+			> .header {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 16px;
+
+				> .logo {
+					width: 68px;
+					height: 68px;
+					border-radius: 50%;
+				}
+
+				> .center {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+
+					> .name {
+						color: #131D34;
+						font-size: 28px;
+						font-weight: bold;
+					}
+
+					> .rate {
+						color: #6B7080;
+						font-size: 18px;
+					}
+				}
+
+				> .date {
+					color: #9DA3B2;
+					font-size: 24px;
+				}
+			}
+
+			> .content {
+				color: #6B7080;
+				font-size: 28px;
+			}
+
+			> .images {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 16px;
+
+				> .each {
+					width: 200px;
+					height: 200px;
+					border-radius: 8px;
+				}
+			}
+		}
+
+		> .comment:last-child {
+			border-bottom: 0;
+		}
+	}
+}

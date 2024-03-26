@@ -1,0 +1,76 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px;
+	background: #FFFFFF;
+
+	> .imageButton {
+		padding: 0;
+		margin: 96px 0;
+		width: 175px;
+		height: 175px;
+		border-radius: 50%;
+
+		> .image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	> .input {
+		width: 100%;
+
+		> .genderSelector {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-left: 24px;
+			padding: 36px 24px 36px 4px;
+			width: calc(100% - 24px - 4px - 24px);
+			border-bottom: 1px solid #F4F6FA;
+
+			> .title {
+				width: 150px;
+				color: #1A1A1A;
+				font-size: 30px;
+				font-weight: bold;
+			}
+
+			> .radio {
+				flex: 1;
+				display: flex;
+				flex-direction: row;
+
+				> .each {
+					flex: 1;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 16px;
+
+					> .image {
+						width: 56px;
+						height: 56px;
+					}
+
+					> .text {
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+
+	> .button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 48px 0;
+		width: 100%;
+		height: 88px;
+		background: #FF6600;
+		border-radius: 44px;
+		font-size: 30px;
+	}
+}

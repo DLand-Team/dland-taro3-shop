@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	height: 100%;
+	background: #F0F0F0;
+
+	> .top {
+		padding: 32px;
+		background: #FFFFFF;
+
+		> .input {
+			font-size: 30px;
+		}
+	}
+
+	> .bottom {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding: 32px;
+		background: #FFFFFF;
+
+		> .title {
+			padding: 16px 0;
+			color: #1A1A1A;
+			font-size: 30px;
+		}
+
+		> .button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 64px;
+			width: 100%;
+			height: 88px;
+			background: #FF6600;
+			font-size: 30px;
+			border-radius: 44px;
+		}
+	}
+}

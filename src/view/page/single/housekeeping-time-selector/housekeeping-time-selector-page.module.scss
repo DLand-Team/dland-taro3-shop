@@ -1,0 +1,117 @@
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	> .top {
+		padding: 24px;
+		width: calc(100% - 48px);
+		background: #FFFFFF;
+
+		> .scroll {
+			width: 100%;
+
+			.rowContent {
+				display: flex;
+				flex-direction: row;
+				gap: 16px;
+
+				--background: #F5F5F5;
+				--border: 1px solid rgba(0, 0, 0, 0);
+				--color: #1A1A1A;
+
+				> .active {
+					--background: rgba(255, 102, 0, 0.08);
+					--border: 1px solid #FF6600;
+					--color: #FF6600;
+				}
+
+				> .each {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 4px;
+					padding: 32px;
+					background: var(--background);
+					border: var(--border);
+					border-radius: 16px;
+					white-space: nowrap;
+
+					> .week {
+						color: var(--color);
+						font-size: 30px;
+						font-weight: bold;
+					}
+
+					> .day {
+						color: var(--color);
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+
+	> .middle {
+		flex: 1;
+		background: #F0F0F0;
+
+		> .scroll {
+			height: 100%;
+
+			.gridContent {
+				display: grid;
+				grid-template-columns: auto auto auto;
+				grid-gap: 16px 16px;
+				padding: 32px;
+
+				--background: #FFFFFF;
+				--color: #1A1A1A;
+
+				> .active {
+					--background: #FF6600;
+					--color: #FFFFFF;
+				}
+
+				> .each {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 20px 0;
+					background: var(--background);
+					border-radius: 8px;
+					color: var(--color);
+					font-size: 28px;
+				}
+			}
+		}
+	}
+
+	> .bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		padding: 16px 32px calc(env(safe-area-inset-bottom) + 16px) 32px;
+		background: #FFFFFF;
+
+		> .tip {
+			color: #F55858;
+			font-size: 26px;
+		}
+
+		> .button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 88px;
+			background: #FF6600;
+			border-radius: 44px;
+			font-size: 30px;
+		}
+	}
+}

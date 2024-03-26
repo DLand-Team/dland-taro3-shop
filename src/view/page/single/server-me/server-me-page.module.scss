@@ -1,0 +1,60 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 32px;
+	background: #F0F0F0;
+
+	> .user {
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+		width: 100%;
+		height: 128px;
+		padding-top: 48px;
+
+		> .logo {
+			width: 128px;
+			height: 128px;
+			border-radius: 50%;
+		}
+
+		> .info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 12px;
+			padding: 16px 0;
+
+			> .name {
+				color: #030504;
+				font-size: 36px;
+				font-weight: bold;
+			}
+		}
+
+		> .control {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			> .button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 8px;
+				background: transparent;
+				border: none;
+				color: #BCC2CC;
+				font-size: 28px;
+			}
+		}
+	}
+
+	> .list {
+		background: #FFFFFF;
+		border-radius: 32px;
+		overflow: hidden;
+	}
+}

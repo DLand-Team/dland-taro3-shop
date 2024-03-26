@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	background: #FFFFFF;
+
+	> .item {
+		flex: 1;
+		padding: 24px 0;
+		color: #1A1A1A;
+		font-size: 28px;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	> .active {
+		color: #FF6600;
+	}
+
+	> .line {
+		position: absolute;
+		height: 6px;
+		// width: calc(20% - 48px);
+		// left: calc(0% + 24px);
+		bottom: 16px;
+		background: linear-gradient(90deg, #FF6600 0%, rgba(255, 102, 0, 0) 100%);
+		transition: 0.35s;
+	}
+}

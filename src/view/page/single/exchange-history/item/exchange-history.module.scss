@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 0;
+	width: 100%;
+	border-bottom: 1px solid #EFF1F5;
+
+	> .image {
+		width: 96px;
+		height: 96px;
+		border-radius: 16px;
+	}
+
+	> .left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		> .title {
+			color: #131D34;
+			font-size: 32px;
+		}
+
+		> .note {
+			color: #9DA3B2;
+			font-size: 28px;
+		}
+	}
+
+	> .right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		> .text {
+			color: #131D34;
+			font-size: 32px;
+			font-family: DIN Pro-Medium, DIN Pro;
+		}
+	}
+}

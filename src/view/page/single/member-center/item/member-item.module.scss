@@ -1,0 +1,74 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-radius: 24px;
+	overflow: hidden;
+
+	> .top {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 36px 32px 28px 32px;
+		background: #FEF9F4;
+
+		> .title {
+			color: #A3592B;
+			font-size: 40px;
+			font-weight: bold;
+			font-family: PingFang SC-Semibold, PingFang SC;
+		}
+
+		> .paragraphs {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			> .each {
+				color: #A3592B;
+				font-size: 22px;
+			}
+		}
+	}
+
+	> .bottom {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 20px 24px;
+		background: linear-gradient(274deg, #F5562D 0%, #FF9559 100%);
+
+		> .price {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			gap: 8px;
+
+			> .value {
+				color: #FFFFFF;
+				font-size: 56px;
+				font-family: DIN Pro-Medium, DIN Pro;
+			}
+
+			> .yuan {
+				color: #FFFFFF;
+				font-size: 22px;
+			}
+		}
+
+		> .button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 176px;
+			height: 72px;
+			color: #B15D18;
+			font-size: 28px;
+			font-weight: bold;
+			font-family: PingFang SC-Semibold, PingFang SC;
+			background: linear-gradient(268deg, #FEDEB6 0%, #FFEACF 100%);
+			border-radius: 48px;
+		}
+	}
+}

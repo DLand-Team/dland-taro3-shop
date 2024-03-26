@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+
+	> .each {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+
+		> .check {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 2px solid #DCDFE5;
+			transition: 0.15s;
+
+			> .inner {
+				width: 20px;
+				height: 20px;
+				background: #FF6600;
+				border-radius: 50%;
+				transition: 0.15s;
+			}
+		}
+
+		> .active {
+			border: 2px solid #FF6600;
+		}
+
+		> .label {
+			color: #1A1A1A;
+			font-size: 28px;
+		}
+	}
+}

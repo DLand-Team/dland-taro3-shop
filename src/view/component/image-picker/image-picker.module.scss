@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	> .content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 16px;
+
+		> .image {
+			position: relative;
+			padding: 16px;
+			width: 144px;
+			height: 144px;
+			border-radius: 8px;
+			overflow: hidden;
+
+			> .inst {
+				width: 100%;
+				height: 100%;
+			}
+
+			> .close {
+				position: absolute;
+				padding: 8px;
+				top: -8px;
+				right: -8px;
+
+				> .circle {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 38px;
+					height: 38px;
+					background: rgba(128, 128, 128, 0.375);
+					border-radius: 50%;
+				}
+			}
+		}
+
+		> .picker {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 16px;
+			width: 144px;
+			height: 144px;
+		}
+	}
+
+	> .tip {
+		color: #9DA3B2;
+		font-size: 24px;
+	}
+}

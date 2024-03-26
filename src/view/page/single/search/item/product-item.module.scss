@@ -1,0 +1,75 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	padding: 32px 0;
+	background: #FFFFFF;
+
+	> .image {
+		width: 175px;
+		height: 175px;
+		border-radius: 16px;
+		overflow: hidden;
+	}
+
+	> .content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding: 4px 0;
+		overflow: hidden;
+
+		> .title {
+			color: #1A1A1A;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		> .introduction {
+			flex: 1;
+			color: #6B7080;
+			font-size: 24px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+
+		> .bottom {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+
+			> .price {
+				flex: 1;
+				display: flex;
+				flex-direction: row;
+				align-items: baseline;
+
+				> .price1 {
+					color: #FF6600;
+					display: flex;
+					flex-direction: row;
+					align-items: baseline;
+
+					> .value {
+						font-size: 48px;
+						font-family: DIN Pro-Medium, DIN Pro;
+						font-weight: bold;
+					}
+
+					> .yuan {
+						margin-left: 8px;
+						font-size: 24px;
+					}
+				}
+
+				> .price2 {
+					margin-left: 16px;
+					color: #FFAE04;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

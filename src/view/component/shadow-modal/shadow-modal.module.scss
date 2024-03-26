@@ -1,0 +1,74 @@
+$transition: 0.5s;
+
+.open {
+	--shadow-modal-background: rgba(0, 0, 0, 0.5);
+	--shadow-modal-bottom: 0;
+}
+
+.close {
+	--shadow-modal-background: rgba(0, 0, 0, 0);
+	--shadow-modal-bottom: -100%;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	> .shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: var(--shadow-modal-background);
+		transition: $transition;
+	}
+
+	> .modal {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		height: auto;
+		left: 0;
+		bottom: var(--shadow-modal-bottom);
+		background: #FFFFFF;
+		border-top-left-radius: 24px;
+		border-top-right-radius: 24px;
+		overflow: hidden;
+		transition: $transition;
+
+		> .header {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 36px;
+
+			> .title {
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #1A1A1A;
+				font-size: 32px;
+				font-weight: bold;
+			}
+
+			> .close {
+				position: absolute;
+				right: 36px;
+			}
+		}
+
+		> .content {
+			padding: 0 36px;
+
+			> .scroll {
+				padding: 36px 0;
+				max-height: 50vh;
+			}
+		}
+	}
+}

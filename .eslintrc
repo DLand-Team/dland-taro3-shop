@@ -1,0 +1,13 @@
+{
+	"extends": [
+		"taro/react"
+	],
+	"rules": {
+		"@typescript-eslint/no-useless-constructor": "off",
+		"react/jsx-closing-bracket-location": "off",
+		"react/jsx-uses-react": "off",
+		"react/jsx-indent-props": "off",
+		"react/react-in-jsx-scope": "off",
+		"import/no-named-as-default": 0
+	}
+}

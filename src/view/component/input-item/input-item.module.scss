@@ -1,0 +1,25 @@
+.container {
+	width: 100%;
+
+	> .content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-left: 24px;
+		padding-left: 4px;
+		padding-right: 24px;
+		width: calc(100% - 24px - 4px - 24px);
+		border-bottom: 1px solid #F4F6FA;
+
+		> .title {
+			width: 150px;
+			color: #1A1A1A;
+			font-size: 30px;
+		}
+
+		> .input {
+			flex: 1;
+			font-size: 28px;
+		}
+	}
+}

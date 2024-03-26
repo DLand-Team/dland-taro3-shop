@@ -1,0 +1,26 @@
+.container {
+	background: #FFFFFF;
+	border-radius: 16px;
+
+	> .title {
+		border: 1px solid #F4F6FA;
+	}
+
+	> .detail {
+		padding: 24px 32px;
+
+		.text {
+			padding: 8px 0;
+			font-size: 28px;
+		}
+
+		.title {
+			color: #9DA3B2;
+			white-space: nowrap;
+		}
+
+		.content {
+			color: #1A1A1A;
+		}
+	}
+}

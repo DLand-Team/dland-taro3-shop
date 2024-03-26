@@ -1,0 +1,18 @@
+html, body, page, root {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: PingFang SC-Regular, PingFang SC;
+}
+
+.table {
+	display: table;
+
+	> .tr {
+		display: table-row;
+
+		> .td {
+			display: table-cell;
+		}
+	}
+}

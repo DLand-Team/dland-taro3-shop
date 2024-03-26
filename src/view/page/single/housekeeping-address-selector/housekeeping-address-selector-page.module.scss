@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: #F0F0F0;
+
+	> .top {
+		flex: 1;
+		overflow: hidden;
+	}
+
+	> .bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		padding: 16px 32px calc(env(safe-area-inset-bottom) + 16px) 32px;
+		background: #FFFFFF;
+
+		> .add {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 86px;
+			color: #FF6600;
+			background: #FFFFFF;
+			border-radius: 44px;
+			border: 1px solid #FF6600;
+			font-size: 30px;
+		}
+
+		> .submit {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 86px;
+			background: #FF6600;
+			border-radius: 44px;
+			border: 1px solid #FF6600;
+			font-size: 30px;
+		}
+	}
+}
