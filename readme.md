@@ -36,7 +36,7 @@
 
 
 ## 鸣谢
-承蒙深红老师的鼎力相助，为我心中挚友深佬发出由衷感谢。
+承蒙深红老师的鼎力相助，为我心中挚友深佬发出由衷感谢，闲D岛因你而更精彩。
 
 > “You can take the darkness from the pit of the night，and turn it to a beacon burning endlessly bright”
 
